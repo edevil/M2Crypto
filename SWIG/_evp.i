@@ -81,6 +81,13 @@ extern const EVP_CIPHER *EVP_bf_cbc(void);
 extern const EVP_CIPHER *EVP_bf_cfb(void);
 %rename(bf_ofb) EVP_bf_ofb;
 extern const EVP_CIPHER *EVP_bf_ofb(void);
+%rename(aes_128_ctr) EVP_aes_128_ctr;
+extern const EVP_CIPHER *EVP_aes_128_ctr(void);
+%rename(aes_192_ctr) EVP_aes_192_ctr;
+extern const EVP_CIPHER *EVP_aes_192_ctr(void);
+%rename(aes_256_ctr) EVP_aes_256_ctr;
+extern const EVP_CIPHER *EVP_aes_256_ctr(void);
+
 /*
 %rename(idea_ecb) extern const EVP_CIPHER *EVP_idea_ecb(void);
 %rename(idea_cbc) extern const EVP_CIPHER *EVP_idea_cbc(void);

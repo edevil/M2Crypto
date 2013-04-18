@@ -8,16 +8,9 @@
 #include <openssl/aes.h>
 #endif
 
-/* 
-// 2004-10-10, ngps: 
-// CTR mode is not included in the default OpenSSL build.
-// To use the AES CTR ciphers, link with your own copy of OpenSSL.
-*/
-#ifdef HAVE_AES_CTR
 extern EVP_CIPHER const *EVP_aes_128_ctr(void);
 extern EVP_CIPHER const *EVP_aes_192_ctr(void);
 extern EVP_CIPHER const *EVP_aes_256_ctr(void);
-#endif
 %}
 
 %apply Pointer NONNULL { AES_KEY * };
